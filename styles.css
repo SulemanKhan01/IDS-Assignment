@@ -28,9 +28,20 @@ nav {
     padding: 0 20px;
 }
 
+nav .compact-image {
+    width: 85px;
+    height: 76px;
+    border-radius: 112px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+
 nav .logo {
     font-size: 1.8em;
     font-weight: bold;
+    margin-left: -460px;
 }
 
 nav ul {
