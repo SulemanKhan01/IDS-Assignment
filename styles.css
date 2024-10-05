@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Services styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* Portfolio styles */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 10px;
+    flex: 1 1 300px; /* Flex item will take at least 300px width */
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Team styles */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 10px;
+    flex: 1 1 200px; /* Flex item will take at least 200px width */
+    text-align: center;
+}
+
+/* Contact form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #575757;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
