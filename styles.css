@@ -213,53 +213,191 @@ h2 {
 }
 
 /* Team styles */
-.team {
+/* Team Styles */
+.team-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
 }
 
 .team-member {
-    margin: 10px;
-    flex: 1 1 200px; /* Flex item will take at least 200px width */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #f08a5d; /* Add a highlight under the image */
+}
+
+.team-member h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.team-member p::before {
+    content: '•';
+    margin-right: 8px;
+    color: #f08a5d; /* Highlighted bullet before role */
+}
+
+.team-member:hover h3 {
+    color: #f08a5d; /* Change color on hover */
+}
+
+.team-member:hover p {
+    color: #333;
+}
+
+
 /* Contact form styles */
+/* Contact Form Styles */
+#contact {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
 }
 
 form input, form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 15px 0;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #f08a5d; /* Orange highlight on focus */
+    box-shadow: 0 0 8px rgba(240, 138, 93, 0.5);
+    outline: none;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical; /* Allow user to resize textarea */
 }
 
 form button {
-    padding: 10px;
-    background: #333;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #f08a5d; /* Stylish orange color */
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 form button:hover {
-    background: #575757;
+    background: #e07b4a; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
-/* Footer styles */
+form button:active {
+    background: #d0683e; /* Slightly darker when clicked */
+    transform: translateY(0);
+}
+
+/* Footer Styles */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Shadow for elevated effect */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #ccc; /* Lighter text for subtlety */
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+footer .socials li {
+    margin: 0 10px;
+}
+
+footer .socials li a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .socials li a:hover {
+    color: #f08a5d; /* Highlighted color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer .socials li a {
+        font-size: 1.3rem;
+    }
 }
