@@ -65,17 +65,20 @@ nav ul li a:hover {
 }
 
 /* Hero section styles */
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+
+
+/* .imgback {
+    width: 100vw;
     height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-}
+    display: block;
+    margin-left: -75px;
+    margin-top: -60px;
+    object-fit: cover;
+} */
+
 
 .hero h1 {
+    
     font-size: 3em;
     margin-bottom: 10px;
 }
