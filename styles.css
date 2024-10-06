@@ -16,7 +16,7 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 8px 0;
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
 
 nav .compact-image {
     width: 85px;
-    height: 76px;
+    height: 85px;
     border-radius: 112px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;
