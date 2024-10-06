@@ -123,17 +123,61 @@ h2 {
 }
 
 /* Team styles */
-.team {
+/* Team Styles */
+.team-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
 }
 
 .team-member {
-    margin: 10px;
-    flex: 1 1 200px; /* Flex item will take at least 200px width */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #f08a5d; /* Add a highlight under the image */
+}
+
+.team-member h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.team-member p::before {
+    content: '•';
+    margin-right: 8px;
+    color: #f08a5d; /* Highlighted bullet before role */
+}
+
+.team-member:hover h3 {
+    color: #f08a5d; /* Change color on hover */
+}
+
+.team-member:hover p {
+    color: #333;
+}
+
 
 /* Contact form styles */
 form {
