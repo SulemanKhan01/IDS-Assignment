@@ -66,33 +66,59 @@ nav ul li a:hover {
 
 /* Hero section styles */
 
-
 #hero {
-    background-image: url('./assets/web.jpg');
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    height: 50vh; /* Adjust height as needed, here it's set to full viewport height */
-    width: 100%; /* Ensures the width is 100% of the parent/container */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-} 
+    background-image: url('./assets/back.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
 
 
 
 .hero h1 {
     
-    font-size: 3em;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 20px;
 }
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effects */
+.cta-button:hover {
+    background-color: #333; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Active/Clicked state */
+.cta-button:active {
+    transform: translateY(0); /* Return to original position when clicked */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Return to original shadow */
+}
+
 
 /* Section styles */
 section {
     padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 10px  ;
 }
 
 h2 {
@@ -103,7 +129,7 @@ h2 {
 /* Services styles */
 
 .service-logo {
-    width: 200px;
+    width: 270px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -126,15 +152,17 @@ h2 {
 }
 
 .service {
-    background: #fff;
+    background:white;
+    
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px black(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
     flex: 1;
     min-width: 300px;
     text-align: center;
 }
+
 
 /* Portfolio styles */
 .portfolio {
