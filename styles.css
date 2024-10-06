@@ -48,6 +48,13 @@ nav ul {
     display: flex;
 }
 
+nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Displays the list items in a row */
+}
+
 nav ul li {
     margin-left: 20px;
 }
@@ -55,14 +62,37 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: background 0.3s;
+    padding: 10px 15px; /* Increased padding for a more spacious look */
+    font-weight: 500; /* Makes the font slightly bolder */
+    font-family: 'Arial', sans-serif; /* Specifies the font */
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; /* Added transition for transform */
 }
 
+/* Hover effects */
 nav ul li a:hover {
     background: #575757;
     border-radius: 5px;
+    transform: translateY(-2px); /* Slight upward movement on hover */
 }
+
+/* Active link styling */
+nav ul li a.active {
+    background: #007BFF; /* Different background for active link */
+    border-radius: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+    nav ul li {
+        margin-left: 0; /* Removes left margin for better alignment */
+        margin-bottom: 10px; /* Adds space between stacked items */
+    }
+}
+
 
 /* Hero section styles */
 
@@ -129,7 +159,7 @@ h2 {
 /* Services styles */
 
 .service-logo {
-    width: 270px;
+    width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
