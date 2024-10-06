@@ -180,31 +180,75 @@ h2 {
 
 
 /* Contact form styles */
+/* Contact Form Styles */
+#contact {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
 }
 
 form input, form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 15px 0;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #f08a5d; /* Orange highlight on focus */
+    box-shadow: 0 0 8px rgba(240, 138, 93, 0.5);
+    outline: none;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical; /* Allow user to resize textarea */
 }
 
 form button {
-    padding: 10px;
-    background: #333;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #f08a5d; /* Stylish orange color */
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 form button:hover {
-    background: #575757;
+    background: #e07b4a; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+form button:active {
+    background: #d0683e; /* Slightly darker when clicked */
+    transform: translateY(0);
 }
 
 /* Footer styles */
